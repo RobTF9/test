@@ -1,0 +1,44 @@
+{
+  "folders": [
+    {
+      "id": "pB05kE3yBlm6sbkW",
+      "name": "Something goes in here!",
+      "parentFolderId": null,
+      "homeProjectId": "Pg8kVunsukbhAwGR",
+      "createdAt": "2025-05-29T08:12:53.543Z",
+      "updatedAt": "2025-05-29T08:13:07.000Z"
+    },
+    {
+      "id": "4osjccfJ77jTUYnR",
+      "name": "Some folder",
+      "parentFolderId": null,
+      "homeProjectId": "Pg8kVunsukbhAwGR",
+      "createdAt": "2025-08-08T09:54:00.874Z",
+      "updatedAt": "2025-08-08T09:54:00.874Z"
+    },
+    {
+      "id": "ckEDD0TaKuOsLqB2",
+      "name": "Test",
+      "parentFolderId": null,
+      "homeProjectId": "qXTx2rJNnE7g7BmZ",
+      "createdAt": "2025-08-08T12:31:40.632Z",
+      "updatedAt": "2025-08-08T12:31:40.632Z"
+    },
+    {
+      "id": "XJelxXy2QC9QoqAX",
+      "name": "Test",
+      "parentFolderId": "ckEDD0TaKuOsLqB2",
+      "homeProjectId": "qXTx2rJNnE7g7BmZ",
+      "createdAt": "2025-08-08T12:31:46.402Z",
+      "updatedAt": "2025-08-08T12:31:46.402Z"
+    },
+    {
+      "id": "PZpBjf8HYJGsQPAw",
+      "name": "Test",
+      "parentFolderId": "XJelxXy2QC9QoqAX",
+      "homeProjectId": "qXTx2rJNnE7g7BmZ",
+      "createdAt": "2025-08-08T12:31:50.844Z",
+      "updatedAt": "2025-08-08T12:31:50.844Z"
+    }
+  ]
+}
