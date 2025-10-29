@@ -1,0 +1,14 @@
+{
+  "id": "ld0t0WkwUsNX1Mwd",
+  "name": "OpenAi account dynamic change",
+  "type": "openAiApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "Pg8kVunsukbhAwGR",
+    "projectName": "Rob Squires <robert+test@n8n.io>",
+    "personalEmail": "robert+test@n8n.io"
+  }
+}
