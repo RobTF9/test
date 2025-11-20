@@ -1,0 +1,14 @@
+{
+  "id": "aJ76s9OfCWxLcMD0",
+  "name": "Affinity account",
+  "type": "affinityApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "Pg8kVunsukbhAwGR",
+    "projectName": "Rob Squires <robert+test@n8n.io>",
+    "personalEmail": "robert+test@n8n.io"
+  }
+}

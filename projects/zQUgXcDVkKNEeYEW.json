@@ -1,0 +1,16 @@
+{
+  "id": "zQUgXcDVkKNEeYEW",
+  "name": "My project",
+  "icon": {
+    "type": "emoji",
+    "value": "🌏"
+  },
+  "description": null,
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "zQUgXcDVkKNEeYEW",
+    "teamName": "My project"
+  },
+  "variableStubs": []
+}

@@ -197,8 +197,8 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "creator": "Lucas Peyrin",
       "position": [
-        1312,
-        256
+        1264,
+        416
       ],
       "typeVersion": 2.2,
       "notes": "© 2025 Lucas Peyrin"
@@ -282,15 +282,27 @@
       "notes": "© 2025 Lucas Peyrin"
     },
     {
-      "parameters": {},
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "nUju5M7fXwyeZc2M",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/nUju5M7fXwyeZc2M",
+          "cachedResultName": "My workflow"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {}
+        }
+      },
       "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
       "typeVersion": 2.2,
       "position": [
-        1472,
-        464
+        1632,
+        544
       ],
       "id": "81f7dd9d-a194-40b4-8bac-b688528d239e",
-      "name": "Call n8n Workflow Tool"
+      "name": "Call 'My workflow'"
     }
   ],
   "connections": {
@@ -349,7 +361,7 @@
         ]
       ]
     },
-    "Call n8n Workflow Tool": {
+    "Call 'My workflow'": {
       "ai_tool": [
         [
           {
@@ -365,7 +377,7 @@
     "executionOrder": "v1"
   },
   "triggerCount": 1,
-  "versionId": "9f6ab54f-59aa-4e05-80ff-94fcd0f33f69",
+  "versionId": "59923ce4-e289-466c-aed1-7d124774a780",
   "owner": {
     "type": "personal",
     "projectId": "Pg8kVunsukbhAwGR",
