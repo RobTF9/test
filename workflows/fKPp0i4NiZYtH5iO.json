@@ -1,0 +1,19 @@
+{
+  "id": "fKPp0i4NiZYtH5iO",
+  "name": "My workflow 6",
+  "nodes": [],
+  "connections": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "4010714b-2715-47bf-9b83-45b17c49fb8a",
+  "owner": {
+    "type": "personal",
+    "projectId": "Pg8kVunsukbhAwGR",
+    "projectName": "Rob Squires <robert+test@n8n.io>",
+    "personalEmail": "robert+test@n8n.io"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}

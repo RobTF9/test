@@ -1,0 +1,31 @@
+{
+  "id": "nUju5M7fXwyeZc2M",
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "d921c198-01f3-41de-bfb4-14791f90238f",
+      "name": "When clicking ‘Execute workflow’"
+    }
+  ],
+  "connections": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "43d632a1-79d7-4899-b2fe-ffe8d755cccd",
+  "owner": {
+    "type": "personal",
+    "projectId": "ZEC6zS7IINiDk9v8",
+    "projectName": "Bobert Aqobert <robert+second@n8n.io>",
+    "personalEmail": "robert+second@n8n.io"
+  },
+  "parentFolderId": null,
+  "isArchived": true
+}

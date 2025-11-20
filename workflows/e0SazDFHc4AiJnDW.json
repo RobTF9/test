@@ -1,0 +1,122 @@
+{
+  "id": "e0SazDFHc4AiJnDW",
+  "name": "My workflow 2",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        96,
+        -192
+      ],
+      "id": "ea800d7b-ea21-4e20-a9f4-789796db55d4",
+      "name": "When chat message received",
+      "webhookId": "77c2a691-6806-4852-99cc-ddf6d6c59339"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.chatInput }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.1,
+      "position": [
+        304,
+        -192
+      ],
+      "id": "7f48ba90-2117-4106-ac6e-0ede75f310b3",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        80,
+        336
+      ],
+      "id": "53b3d3e3-2a32-412f-b783-363b53331db5",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "path": "347218fb-8190-4807-a0c3-6e243aec3ba4",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        80,
+        176
+      ],
+      "id": "da1f9d74-3067-4990-8a53-b7457d7bcbc1",
+      "name": "Webhook",
+      "webhookId": "347218fb-8190-4807-a0c3-6e243aec3ba4"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        288,
+        32
+      ],
+      "id": "9fa9d641-2eba-4df6-b072-160dddcbc7d7",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "ld0t0WkwUsNX1Mwd",
+          "name": "OpenAi account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "d8c41fe4-5e12-4f4c-9811-b160cdf65044",
+  "owner": {
+    "type": "personal",
+    "projectId": "Pg8kVunsukbhAwGR",
+    "projectName": "Rob Squires <robert+test@n8n.io>",
+    "personalEmail": "robert+test@n8n.io"
+  },
+  "parentFolderId": null,
+  "isArchived": true
+}

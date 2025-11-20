@@ -1,0 +1,239 @@
+{
+  "id": "89Rp4qYOYhDEmogN",
+  "name": "My workflow 7",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        128,
+        -64
+      ],
+      "id": "38204ea6-ab09-4a8d-b8ed-6bb26ae87d38",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  item.json.myNewField = 1;\n}\n\nreturn $input.all();"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        928,
+        -80
+      ],
+      "id": "cd5e2d11-084c-4607-bd4b-6caf2b28dbfe",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6c8bf6da-937e-44cf-a3bc-e64657ef1732",
+              "name": "myNewField",
+              "value": "={{ $input.all() }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1392,
+        -64
+      ],
+      "id": "b120c4d4-3688-419d-85d3-b5a5c73c036c",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "height": 432,
+        "width": 288
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        32,
+        -272
+      ],
+      "typeVersion": 1,
+      "id": "b6a6f6dc-7d32-4df9-ba41-ab258457d384",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "height": 432,
+        "width": 288,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        848,
+        -272
+      ],
+      "typeVersion": 1,
+      "id": "6829a590-e61e-4b57-8ce0-bc4d818afaff",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "height": 432,
+        "width": 352,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1280,
+        -272
+      ],
+      "typeVersion": 1,
+      "id": "9207ffa5-8578-486a-a0db-ee8b838489cd",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6c8bf6da-937e-44cf-a3bc-e64657ef1732",
+              "name": "",
+              "value": "={{ $input.all() }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1840,
+        -64
+      ],
+      "id": "231f5719-133d-4eab-a837-1feb85b6727c",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "height": 432,
+        "width": 352,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1728,
+        -272
+      ],
+      "typeVersion": 1,
+      "id": "8350584b-5f6f-4196-977c-816354e7012f",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  item.json.myNewField = 1;\n}\n\nreturn $input.all();"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        -432
+      ],
+      "id": "b6380605-75ce-473c-bd4f-d7d4587343b2",
+      "name": "Code in JavaScript1"
+    },
+    {
+      "parameters": {
+        "height": 432,
+        "width": 288,
+        "color": 2
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        432,
+        -272
+      ],
+      "typeVersion": 1,
+      "id": "a97622cd-bd7f-43b7-9cef-e8b298bb2cb5",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  item.json.myNewField = 1;\n}\n\nreturn $input.all();"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2240,
+        -64
+      ],
+      "id": "74c9da67-f15a-4527-bb83-67076e804e33",
+      "name": "Code in JavaScript2"
+    },
+    {
+      "parameters": {
+        "height": 432,
+        "width": 288,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        2160,
+        -272
+      ],
+      "typeVersion": 1,
+      "id": "fc77ac18-50a2-4019-b53c-20c9d6335c70",
+      "name": "Sticky Note5"
+    }
+  ],
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "b84d52ac-d479-4dd1-909a-e45dfda88f9f",
+  "owner": {
+    "type": "personal",
+    "projectId": "Pg8kVunsukbhAwGR",
+    "projectName": "Rob Squires <robert+test@n8n.io>",
+    "personalEmail": "robert+test@n8n.io"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}

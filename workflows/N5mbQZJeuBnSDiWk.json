@@ -1,0 +1,31 @@
+{
+  "id": "N5mbQZJeuBnSDiWk",
+  "name": "Workflow with super super super long name!",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "8a7b298b-825e-44ad-a445-ab9e608955c3",
+      "name": "When clicking ‘Execute workflow’"
+    }
+  ],
+  "connections": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "521db5f5-f5c7-47b3-b220-cfcc71a01a46",
+  "owner": {
+    "type": "personal",
+    "projectId": "Pg8kVunsukbhAwGR",
+    "projectName": "Rob Squires <robert+test@n8n.io>",
+    "personalEmail": "robert+test@n8n.io"
+  },
+  "parentFolderId": null,
+  "isArchived": true
+}

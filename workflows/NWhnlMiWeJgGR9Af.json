@@ -1,0 +1,104 @@
+{
+  "id": "NWhnlMiWeJgGR9Af",
+  "name": "Something changed",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "chat_trigger",
+      "name": "When chat message received",
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "position": [
+        384,
+        160
+      ],
+      "typeVersion": 1,
+      "webhookId": "54b0da13-df7d-4254-aa96-6f5226ec43a5"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "agent",
+      "name": "AI Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "position": [
+        656,
+        256
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "model": "gpt-4",
+        "options": {}
+      },
+      "id": "llm",
+      "name": "OpenAI Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "position": [
+        464,
+        464
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {},
+      "id": "memory",
+      "name": "Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "position": [
+        240,
+        576
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {},
+      "id": "tool_calculator",
+      "name": "Calculator",
+      "type": "@n8n/n8n-nodes-langchain.toolCalculator",
+      "position": [
+        864,
+        352
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {},
+      "id": "tool_code",
+      "name": "Code Execution",
+      "type": "@n8n/n8n-nodes-langchain.toolCode",
+      "position": [
+        864,
+        464
+      ],
+      "typeVersion": 1
+    }
+  ],
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "triggerCount": 0,
+  "versionId": "27482ec2-35ab-4d29-a41e-759f8349b23a",
+  "owner": {
+    "type": "personal",
+    "projectId": "Pg8kVunsukbhAwGR",
+    "projectName": "Rob Squires <robert+test@n8n.io>",
+    "personalEmail": "robert+test@n8n.io"
+  },
+  "parentFolderId": null,
+  "isArchived": true
+}

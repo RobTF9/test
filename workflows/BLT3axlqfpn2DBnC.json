@@ -1,0 +1,192 @@
+{
+  "id": "BLT3axlqfpn2DBnC",
+  "name": "Change me now!",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "You are a helpful assistant"
+        }
+      },
+      "id": "9rhDAbw4K5lQmWVZZaTDP",
+      "name": "AI Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.1,
+      "position": [
+        448,
+        224
+      ]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "id": "U6fYtKejXpfxozLnZ8_6B",
+      "name": "OpenAI Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        384,
+        448
+      ],
+      "credentials": {
+        "openAiApi": {
+          "id": "ld0t0WkwUsNX1Mwd",
+          "name": "OpenAi account dynamic change"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "QKbnn22UFEHMiuMQ7v0EQ",
+      "name": "Simple Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        512,
+        448
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "9N6aWgRjbUtYhttflNiyw",
+      "name": "Calculator",
+      "type": "@n8n/n8n-nodes-langchain.toolCalculator",
+      "typeVersion": 1,
+      "position": [
+        640,
+        448
+      ]
+    },
+    {
+      "parameters": {
+        "path": "53b4dd3d-b4ae-43bb-9a38-36945ca3bb2d",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        160,
+        224
+      ],
+      "id": "13d30925-15b6-4d0f-a684-aad1f386cfc8",
+      "name": "Webhook",
+      "webhookId": "53b4dd3d-b4ae-43bb-9a38-36945ca3bb2d"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "D1gz9Ud7-ASBlsfAw2Mhh",
+      "name": "Checking this one is ok",
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        160,
+        32
+      ],
+      "webhookId": "T1rfK_XWviL5Q3NDT6_eM"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {}
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        160,
+        416
+      ],
+      "id": "4fb21dbe-5a4c-4112-931e-57496f4fd2df",
+      "name": "Schedule Trigger"
+    }
+  ],
+  "connections": {
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculator": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Checking this one is ok": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "triggerCount": 0,
+  "versionId": "25752031-2177-402c-9f1f-6284e77e0a86",
+  "owner": {
+    "type": "personal",
+    "projectId": "Pg8kVunsukbhAwGR",
+    "projectName": "Rob Squires <robert+test@n8n.io>",
+    "personalEmail": "robert+test@n8n.io"
+  },
+  "parentFolderId": null,
+  "isArchived": true
+}

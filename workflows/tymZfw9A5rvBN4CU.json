@@ -1,0 +1,1309 @@
+{
+  "id": "tymZfw9A5rvBN4CU",
+  "name": "Something",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "Always say \"blah blah\" nothing else",
+          "maxIterations": 10
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.1,
+      "position": [
+        -32,
+        -32
+      ],
+      "id": "b400286f-99d0-40c3-9930-df4788d19088",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -256,
+        -32
+      ],
+      "id": "049c179e-655e-4c85-ba14-2f5f0ddba1ef",
+      "name": "When chat message received",
+      "webhookId": "1cf36d7a-322d-4a0c-b2fe-5f156abbd1da"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -96,
+        240
+      ],
+      "id": "29b7ae76-90a4-4ed3-b043-dc629ee74975",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "ld0t0WkwUsNX1Mwd",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {
+        "path": "0c73a3d9-2557-42c4-a87b-4f5f5042edec",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -272,
+        -384
+      ],
+      "id": "012b0b9a-2b53-42d8-851f-b1b7a7871578",
+      "name": "Webhook",
+      "webhookId": "0c73a3d9-2557-42c4-a87b-4f5f5042edec"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        -208
+      ],
+      "id": "e941915f-e92c-4366-ad0f-2059bdb4da2e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        -208
+      ],
+      "id": "e941915f-e92c-4366-ad0f-2059bdb4da2e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        -208
+      ],
+      "id": "e941915f-e92c-4366-ad0f-2059bdb4da2e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        -208
+      ],
+      "id": "e941915f-e92c-4366-ad0f-2059bdb4da2e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        -208
+      ],
+      "id": "e941915f-e92c-4366-ad0f-2059bdb4da2e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        -208
+      ],
+      "id": "e941915f-e92c-4366-ad0f-2059bdb4da2e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        -208
+      ],
+      "id": "e941915f-e92c-4366-ad0f-2059bdb4da2e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        -208
+      ],
+      "id": "e941915f-e92c-4366-ad0f-2059bdb4da2e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        -208
+      ],
+      "id": "e941915f-e92c-4366-ad0f-2059bdb4da2e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        -208
+      ],
+      "id": "e941915f-e92c-4366-ad0f-2059bdb4da2e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        -208
+      ],
+      "id": "e941915f-e92c-4366-ad0f-2059bdb4da2e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        -208
+      ],
+      "id": "e941915f-e92c-4366-ad0f-2059bdb4da2e",
+      "name": "When clicking ‘Execute workflow’"
+    }
+  ],
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "6b4c9c7d-8f60-4cd3-8ebe-4c5b79d51601",
+  "owner": {
+    "type": "personal",
+    "projectId": "Pg8kVunsukbhAwGR",
+    "projectName": "Rob Squires <robert+test@n8n.io>",
+    "personalEmail": "robert+test@n8n.io"
+  },
+  "parentFolderId": null,
+  "isArchived": true
+}
